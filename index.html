@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FastVisa downloads</title>
+<style>
+  :root{ --a1:#667eea; --a2:#764ba2; --bg:#10101f; --panel:#1d1d38; --line:rgba(255,255,255,.1);
+         --txt:#eef0ff; --dim:#9aa1c7; }
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(160deg,var(--bg) 0%,#141428 55%,#191233 100%);color:var(--txt);
+       font:15px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:42px 20px 60px}
+  .brand{display:flex;align-items:center;gap:13px;margin:0 0 6px}
+  .logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--a1),var(--a2));
+        display:flex;align-items:center;justify-content:center;font-size:23px}
+  h1{font-size:26px;margin:0}
+  .tag{color:var(--dim);margin:2px 0 30px}
+  h2{font-size:18px;margin:30px 0 4px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:14px 0}
+  .fname{font-weight:700;font-size:16px}
+  .meta{color:var(--dim);font-size:13px;margin:2px 0 10px}
+  .hash{font:12px/1.5 ui-monospace,Menlo,Consolas,monospace;color:var(--dim);word-break:break-all;
+        background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:9px;padding:8px 10px;margin:10px 0}
+  .hash b{color:var(--txt);font-weight:600}
+  a.dl{display:inline-block;background:linear-gradient(135deg,var(--a1),var(--a2));color:#fff;text-decoration:none;
+       font-weight:600;padding:10px 20px;border-radius:10px;margin:4px 0 6px}
+  ol{margin:8px 0 4px;padding-left:20px;color:#cfd4f5}
+  ol li{margin:3px 0}
+  code{background:rgba(255,255,255,.08);padding:1px 6px;border-radius:6px;font-size:13px}
+  .or{color:var(--dim);font-size:13px;margin:26px 0 0;text-transform:uppercase;letter-spacing:1.2px}
+  footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);color:var(--dim);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><div class="logo">⚡</div><h1>FastVisa downloads</h1></div>
+  <p class="tag">The FastVisa Launcher and the FastVisa Chrome extension. Keep them together in one folder — the launcher manages the rest.</p>
+
+  <h2>Everything in one ZIP</h2>
+  <div class="card">
+    <div class="fname">Launcher + extension</div>
+    <div class="meta">Launcher 1.1.0 · 31 Oct 2026 &nbsp;|&nbsp; Extension 10.1.153 · 31 Oct 2026 &nbsp;|&nbsp; Page built 31 Oct 2026 · 21:09</div>
+    <a class="dl" href="https://github.com/aymanemt1/fastvisa-releases/releases/download/v1.1.0/fastvisa-all-in-one.zip">Download</a>
+    <div class="meta">fastvisa-all-in-one.zip · 30.9 MB</div>
+    <div class="hash"><b>SHA-256</b> b77e8799ac629f4f08520a8b2b4ca0716376e4271fe370d11810c58ccc9e4986</div>
+    <ol>
+      <li>Extract the ZIP into a new folder and keep its files together.</li>
+      <li>Double-click <code>FastVisa Launcher.exe</code> and keep its window open — the console opens in your browser by itself. No Node.js install is needed.</li>
+      <li>Activate the console with your invite code and access token.</li>
+      <li>Create a worker in the console: it launches Chrome with the extension from the <code>extension</code> folder beside the launcher. No manual extension install is needed for workers.</li>
+    </ol>
+  </div>
+
+  <p class="or">Or download the parts</p>
+
+  <h2>Chrome extension</h2>
+  <div class="card">
+    <div class="fname">FastVisa extension 10.1.153</div>
+    <div class="meta">Runs in Google Chrome · 31 Oct 2026</div>
+    <a class="dl" href="https://github.com/aymanemt1/fastvisa-releases/releases/download/v1.1.0/fastvisa-extension-v10.1.153.zip">Download</a>
+    <div class="meta">fastvisa-extension-v10.1.153.zip · 308 KB</div>
+    <div class="hash"><b>SHA-256</b> f5515e29b9cc0f5fdcf0ae3e1bf55a1403330686bfbcf8fc7520ecc470e1c516</div>
+    <ol>
+      <li>Extract the ZIP into a folder (the folder must contain <code>manifest.json</code> directly inside).</li>
+      <li>Open <code>chrome://extensions</code> and turn on <b>Developer mode</b>.</li>
+      <li>Click <b>Load unpacked</b> and choose that folder.</li>
+    </ol>
+  </div>
+
+  <h2>Launcher</h2>
+  <div class="card">
+    <div class="fname">FastVisa Launcher 1.1.0</div>
+    <div class="meta">Windows · one executable, nothing to install · 31 Oct 2026</div>
+    <a class="dl" href="https://github.com/aymanemt1/fastvisa-releases/releases/download/v1.1.0/fastvisa-launcher.zip">Download</a>
+    <div class="meta">fastvisa-launcher.zip · 30.9 MB</div>
+    <div class="hash"><b>SHA-256</b> b77e8799ac629f4f08520a8b2b4ca0716376e4271fe370d11810c58ccc9e4986</div>
+    <ol>
+      <li>Extract the ZIP into a folder you keep, and keep its files together — the managed extension travels inside it, in the <code>extension</code> folder.</li>
+      <li>Double-click <code>FastVisa Launcher.exe</code> and keep its window open — the console opens in your browser by itself.</li>
+      <li>Activate with your invite code and access token.</li>
+    </ol>
+  </div>
+
+  <footer>
+    A FastVisa license is required to activate the launcher — licenses are issued by the FastVisa admin.
+    The extension works on its own; the launcher adds the multi-worker console. For help, use the usual FastVisa support channel.
+  </footer>
+</div>
+</body>
+</html>
